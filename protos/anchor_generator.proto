@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+package object_detection.protos;
+
+import "protos/grid_anchor_generator.proto";
+import "protos/ssd_anchor_generator.proto";
+import "protos/rssd_anchor_generator.proto";
+import "protos/grid_rbbox_anchor_generator.proto";
+
+// Configuration proto for the anchor generator to use in the object detection
+// pipeline. See core/anchor_generator.py for details.
+message AnchorGenerator {
+  oneof anchor_generator_oneof {
+    GridAnchorGenerator grid_anchor_generator = 1;
+    SsdAnchorGenerator ssd_anchor_generator = 2;
+    RssdAnchorGenerator rssd_anchor_generator = 3;
+    GridRbboxAnchorGenerator grid_rbbox_anchor_generator = 4;
+  }
+}
