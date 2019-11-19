@@ -89,8 +89,7 @@ We provide a shell script('train_n_eval.sh') for train and evaluation.
 
 ## Extras
 We provide a submission code for [Object Detection Challenge in Satellite Image](https://dacon.io/agreement10).
-The submission code is "inference.py" and run   
-The code splits images into small patch images and runs steps below.
+The submission code is "inference.py and run steps below.
 1. Split images into small patch images
 2. Infer patch images
 3. Merge detected objects of patch images
