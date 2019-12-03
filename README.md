@@ -43,7 +43,7 @@ More parameters for training refer to [Tensorflow Object Detection API](https://
 
 ```
 tf_record_input_reader {
-  input_path: "/usr/home/username/data/train.record"
+  input_path: "/usr/home/username/data/train.tfrecord"
 }
 label_map_path: "/usr/home/username/data/label_map.pbtxt"
 ```
@@ -66,7 +66,7 @@ eval_config:
 {
     num_examples: Number of samples 
     eval_input_reader {
-        input_path: "/usr/home/username/data/train.record"
+        input_path: "/usr/home/username/data/val.tfrecord"
     }
     label_map_path: "/usr/home/username/data/label_map.pbtxt"
 ```
