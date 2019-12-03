@@ -37,8 +37,9 @@ python create_dataset.py --src_dir='Root directory to geojson and images'
 
 ## Training
 #### Configuring the model pipeline
-The config file of simplified RBox-CNN is "/configs/rbox_cnn_resnent101.config"  
-You have to set input path of tfrecords in the config file.
+The config file of simplified RBox-CNN is "/configs/rbox_cnn_resnent101.config".  
+You have to set input path of tfrecords in the config file.   
+We recommend to set 'fine_tune_checkpoint_path' to the [pretrained model(faster_rcnn_resnet101_coco_11_06_2017)](http://storage.googleapis.com/download.tensorflow.org/models/object_detection/faster_rcnn_resnet101_coco_11_06_2017.tar.gz)  
 More parameters for training refer to [Tensorflow Object Detection API](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/configuring_jobs.md)
 
 ```
