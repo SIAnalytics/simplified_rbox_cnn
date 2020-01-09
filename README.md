@@ -78,7 +78,7 @@ You can select a evaluation mode.
  - 'latest_once': latest checkpoint is evaluated and it finishes evaluation.
  - 'all', all checkpoints are evaluated and it finishes evaluation.
 ```
-python train.py --pipeline_config_path='Path to a config file of the model'
+python eval.py --pipeline_config_path='Path to a config file of the model'
                 --checkpoint_dir='Directory to save the checkpoints and training summaries'
                 --eval_dir='Directory to write eval summaries to'
                 --run_mode='One of [latest, latest_once, all]'
