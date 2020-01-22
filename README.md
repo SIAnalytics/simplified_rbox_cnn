@@ -100,7 +100,7 @@ The submission code is "inference.py and run steps below.
 ```
 python inference.py --pipeline_config_path='Path to a config file of the model'
                     --ckpt_path='Path to trained checkpoint, typically of the form path/to/model-%step.ckpt''
-                    --image_dir='Directory to write eval summaries to'
+                    --image_dir='Path to images to be inferred'
                     --dst_path='Path to save detection output(CSV file)'
                     ...               
 ```
